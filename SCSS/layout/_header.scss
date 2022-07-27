@@ -1,0 +1,20 @@
+.header {
+    &__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media($md) {
+            padding-left: $md-padding;
+            padding-right: $md-padding;
+        }
+
+        @include media($lg) {
+            padding-left: $lg-padding;
+            padding-right: $lg-padding;
+        }
+    }
+}

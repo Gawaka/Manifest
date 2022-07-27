@@ -1,0 +1,65 @@
+.banner {
+    &__hero {
+        background-image: url(../../images/bg-image.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-size: cover;
+        // width: 100%;
+        // max-width: $width;
+        margin: 0 auto;
+        color: $black-default;
+
+        @media screen and (orientation: landscape) {
+            background-position: bottom center;
+            height: 414px;
+        }
+
+        @include media ($md) {
+            background-image: url(../../images/hero-tablet.jpg);
+            height: 320px;
+
+        }
+
+        @include media ($lg) {
+            background-image: url(../../images/bg-desctop.jpg);
+            height: 600px;
+        }
+
+        &-description {
+            font-family: $font-secondary;
+            font-weight: 600;
+            line-height: 50px;
+            font-size: 30px;
+            letter-spacing: 0.05em;
+            padding-top: 70px;
+
+            @include media($md) {
+                width: 649px;
+                height: 100px;
+                font-size: 36px;
+                padding-top: 30px;
+            }
+
+            @include media($lg) {
+                width: 720px;
+                padding-top: 100px;
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+.container-description {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include media($md) {
+        padding-left: $md-padding;
+        padding-right: $md-padding;
+    }
+
+    @include media($lg) {
+        padding-left: $lg-padding;
+        padding-right: $lg-padding;
+    }
+}

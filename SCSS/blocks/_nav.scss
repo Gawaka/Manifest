@@ -1,0 +1,17 @@
+.nav {
+    &__list {
+        list-style: none;
+        display: none;
+
+        @include media($lg) {
+            display: block;
+        }
+    }
+
+    &__btn {
+        
+        @include media($lg) {
+            display: none;
+        }
+    }
+}

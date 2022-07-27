@@ -1,0 +1,24 @@
+body {
+    font-family: $font-secondary;
+    width: 100%;
+    max-width: $width;
+    margin: 0 auto;
+    color: $primary;
+    overflow: hidden;
+    height: 200vh;
+}
+
+html {
+    font-size: $font-size-default;
+
+}
+
+.container {
+    // width: 100%;
+    max-width: $content-wigth;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}

@@ -1,0 +1,28 @@
+/******** Fonts ********/
+$font-primary: 'lato', sans-serif;
+$font-secondary: 'red hat display', sans-serif;
+$font-size-default: 16px;
+
+/******** Colors ********/
+$primary:          #565656;
+$primary-light:    #544837;
+$secondary:        #7b7b7b;
+$secondary-light:  #fab005;
+$white-default:    #ffffff;
+$black-default:    #000000;
+
+/******** Widths ********/
+$width: 1440px;
+$content-wigth: 1200px;
+
+/******** Breakpoints ********/
+$lg: 1440px;
+$md: 768px;
+$md-max: $lg -1;
+$sm: 320px;
+$sm-max: $md -1;
+
+/******** Padding ********/
+$sm-padding: 10px;
+$md-padding: 35px;
+$lg-padding: 135px;
