@@ -1,15 +1,58 @@
 .nav {
+
+    @include media ($lg) {
+        margin-right: 80px;
+    }
+
     &__list {
         list-style: none;
         display: none;
 
+        // .nav__list--open & {
+        //     display: block;
+        //     display: flex;
+        //     flex-direction: column-reverse;
+        // }
+
         @include media($lg) {
+            // display: block;
+            display: flex;
+            color: $black-default;
+            gap: 40px;
+            font-size: 14px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black-default;
+        font-family: $font-primary;
+        letter-spacing: 3px;
+        font-weight: 600;
+        position: relative;
+
+        &::after {
+            content: "";
             display: block;
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            background-color: transparent;
+            left: 8%;
+            bottom: -5px;
+        }
+
+        &:hover {
+            &::after {
+                background-color: $black-default;
+                transition: all 0.5s ease-in-out;
+            }
         }
     }
 
     &__btn {
-        
+        cursor: pointer;
         @include media($lg) {
             display: none;
         }
