@@ -4,7 +4,7 @@ body {
     max-width: $width;
     margin: 0 auto;
     color: $primary;
-    overflow: hidden;
+    // overflow: hidden;
     height: 200vh;
 }
 
@@ -14,9 +14,9 @@ html {
 }
 
 .container {
-    // width: 100%;
     max-width: $content-wigth;
     margin: 0 auto;
+    right: 80px;
 }
 
 .flex {

@@ -1,0 +1,45 @@
+.blog {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include media ($md) {
+        padding-left: $md-padding;
+        padding-right: $md-padding;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        width: 260px;
+    }
+
+    &__header {
+        right: 0;
+    }
+
+    &__content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+        @include media ($md) {
+            img {
+                width: 340px;
+                height: 280px;
+
+            }
+            display: flex;
+            
+        }
+    }
+}

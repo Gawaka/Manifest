@@ -8,12 +8,18 @@
         justify-content: space-between;
         align-items: center;
 
+        @include media($sm) {
+            max-width: 320px;
+        }
+
         @include media($md) {
+            max-width: 768px;
             padding-left: $md-padding;
             padding-right: $md-padding;
         }
 
         @include media($lg) {
+            max-width: 1440px;
             padding-left: $lg-padding;
             padding-right: $lg-padding;
         }

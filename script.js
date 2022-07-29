@@ -1,7 +1,7 @@
 let hamburger = document.querySelector('.js-hamburger');
-let body = document.querySelector('.body');
+let nav = document.querySelector('.nav');
 
 hamburger.addEventListener('click',function(){
-    body.classList.toggle('nav__list--open');
+    nav.classList.toggle('nav__list--open');
 })
 

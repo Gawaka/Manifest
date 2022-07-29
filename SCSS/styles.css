@@ -335,17 +335,43 @@ span {
   padding-right: 0;
 }
 
-@media screen and (min-width: 1440px) {
-  .nav {
-    margin-right: 80px;
-  }
-}
 .nav__list {
   list-style: none;
   display: none;
 }
+@media screen and (min-width: 320px) {
+  .nav__list--open .nav__list {
+    display: block;
+    font-size: xx-small;
+    text-align: center;
+    width: 70px;
+    position: fixed;
+    padding-top: 25px;
+    line-height: 3;
+    text-align: end;
+    right: 1px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__list--open .nav__list {
+    display: block;
+    font-size: xx-small;
+    text-align: center;
+    width: 70px;
+    position: fixed;
+    padding-top: 25px;
+    line-height: 3;
+    right: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav__list--open .nav__list {
+    display: block;
+  }
+}
 @media screen and (min-width: 1440px) {
   .nav__list {
+    display: block;
     display: flex;
     color: #000000;
     gap: 40px;
@@ -467,13 +493,55 @@ span {
 @media screen and (min-width: 1440px) {
   .search {
     order: 1;
-    margin-left: 0;
+    margin-left: 90px;
   }
 }
 .search__button-icon {
   cursor: pointer;
   width: 34px;
   height: 20px;
+}
+
+.blog {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.blog h1 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.blog h3 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 260px;
+}
+.blog__header {
+  right: 0;
+}
+.blog__content {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .blog__content {
+    display: flex;
+  }
+  .blog__content img {
+    width: 340px;
+    height: 280px;
+  }
 }
 
 .header__container {
@@ -484,14 +552,21 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 320px) {
+  .header__container {
+    max-width: 320px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__container {
+    max-width: 768px;
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 @media screen and (min-width: 1440px) {
   .header__container {
+    max-width: 1440px;
     padding-left: 135px;
     padding-right: 135px;
   }
@@ -503,7 +578,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: #565656;
-  overflow: hidden;
   height: 200vh;
 }
 
@@ -514,6 +588,7 @@ html {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  right: 80px;
 }
 
 .flex {
